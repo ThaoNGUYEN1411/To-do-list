@@ -47,20 +47,14 @@ add.addEventListener("click", (e) => {
     const imgValider = document.createElement("img");
     imgValider.src = "img/check.png";
     aValider.appendChild(imgValider);
-    // divIcons.appendChild(aValider);
 
     a1.addEventListener("click", (e) => {
       p.style.background = "#58f47f";
       p.setAttribute("contenteditable", "true");
-      //   p.innerText = e.value;
       divIcons.replaceChild(aValider, a1);
       //corriger submit
       aValider.addEventListener("click", (e) => {
-        // const input1 = input.target ;
-        // p.innerText = input1.value;
         console.log(input);
-        // section.appendChild(div);
-        // divIcons.appendChild(aValider);
         p.removeAttribute("contenteditable", "true");
         divIcons.replaceChild(a1, aValider);
         console.log(divIcons);
