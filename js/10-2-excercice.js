@@ -24,17 +24,8 @@ add.addEventListener("click", (e) => {
     div.append(p, divIcons);
 
     //style CSS
-    div.style.backgroundColor = "rgb(205 233 235)";
-    div.style.width = "37vw";
-    div.style.margin = "0 auto";
-    div.style.display = "flex";
-    div.style.justifyContent = "space-between";
-    div.style.alignItems = "center";
-    div.style.marginBottom = "15px";
-    p.style.display = "block";
-    p.style.width = "80%";
-    p.style.padding = "3px 10px";
-    p.style.marginLeft = "10px";
+    div.setAttribute('class', 'div-change');
+    p.setAttribute('class', 'p-change');
     divIcons.style.padding = "0 10px";
     a1.style.padding = "0 10px";
     //fin style CSS
