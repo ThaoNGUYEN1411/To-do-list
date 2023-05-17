@@ -5,6 +5,7 @@ const section = document.querySelector("section");
 
 add.addEventListener("click", (e) => {
   if (input.value) {
+    input.value = '';
     //creer HTML
     const div = document.createElement("div");
     const p = document.createElement("p");
@@ -57,6 +58,6 @@ add.addEventListener("click", (e) => {
     a2.addEventListener("click", (e) => {
       div.remove();
     });
-  } input.value = '';
+  } 
 });
 
